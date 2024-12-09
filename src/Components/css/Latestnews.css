@@ -1,0 +1,148 @@
+.main-container {
+    text-align: center;
+    padding: 10px;
+    width:100%;
+    margin-top:30px ;
+}
+img{
+    width:300px;
+}
+.Heading{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Heading h4 {
+    margin-bottom: 20px;
+    color: rgb(80, 80, 223);
+}
+
+.grid-container{
+    max-width: 1300px !important;
+}
+.grid-container {
+    display: grid;
+    padding: 10px;
+    margin-left:100px;
+    gap: 10px;
+    
+     grid-template-areas:
+    "I1 I2 I3 I4"
+    "I1 I5 I3 I6"
+    "I7 I5 I8 I6";
+    max-width: 1000px;
+  }
+  .grid-container img{
+    width: 100%;
+  }
+  .image1{
+    grid-area: I1;
+  }
+  .image2{
+    grid-area: I2;
+  }
+  .image3{
+    grid-area: I3;
+  }
+  .image4{
+      grid-area: I8;
+    }
+    .image5{
+        grid-area: I4;
+    }
+    .image6{
+        grid-area: I5;
+    }
+    .image7{
+      margin-top: 10px;
+    grid-area: I7;
+  }
+  .image8{
+    grid-area: I6;
+  }
+  
+  .image {
+    background-color: #f8f9fa; /* Optional: light background for contrast */
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image img {
+    max-width: 70%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+
+  @media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet screens */
+        grid-template-areas:
+            "I1 I2"
+            "I3 I4"
+            "I5 I6"
+            "I7 I8";
+        margin-left: 20px;
+    }
+
+    .image img {
+        max-width: 100%; /* Ensure images take full width in smaller screens */
+    }
+}
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+        grid-template-areas:
+            "I1"
+            "I2"
+            "I3"
+            "I4"
+            "I5"
+            "I6"
+            "I7"
+            "I8";
+        margin-left: 0; /* Remove left margin */
+        gap: 5px; /* Reduce gap on smaller screens */
+    }
+
+    .image img {
+        max-width: 100%; /* Ensure images are responsive and full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+        grid-template-areas:
+            "I1"
+            "I2"
+            "I3"
+            "I4"
+            "I5"
+            "I6"
+            "I7"
+            "I8";
+    }
+
+    .image img {
+        max-width: 100%; /* Full width images for mobile */
+    }
+}
+  

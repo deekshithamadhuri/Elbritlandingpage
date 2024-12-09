@@ -1,0 +1,177 @@
+.footer {
+    background-color: #004c70; /* Dark teal background */
+    color: #fff; /* White text */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-left: 135px;
+    
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #015f7a; /* Slightly lighter teal background */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width:270px;
+    height: 50px;
+}
+  
+  .info-card img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .info-text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  
+  .footer-logo img {
+    max-width: 150px;
+    /* margin: 0 auto; */
+    margin-top: 20px;
+    margin-left: -600px;
+    position: absolute;
+    margin-bottom: 10px;
+    
+}
+
+.footer-description {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .footer-description .p1 {
+    font-size: 7px;
+    /* margin-bottom: 15px; */
+    width: 200px;
+    height: 70px;
+    margin-left: 450px;
+    position: relative;
+    margin-top: 10px;
+    top:20px;
+  }
+  .footer-description p {
+    margin: 0;
+  }
+  .group{
+    margin-left: -700px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr; /* 2 columns on medium screens */
+        margin-left: 20px; /* Adjust margin for better alignment */
+    }
+
+    .info-card {
+        width: 220px; /* Adjust width for medium screens */
+    }
+
+    .footer-logo img {
+        max-width: 120px; /* Smaller logo on medium screens */
+        margin-left: 0; /* Center the logo */
+        position: relative; /* Adjust position for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .footer-description .p1 {
+        margin-left: 0; /* Center paragraph */
+        font-size: 10px; /* Adjust text size */
+    }
+
+    .group {
+        margin-left: 0; /* Align group section properly */
+    }
+}
+
+  @media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        margin-left: 10px;
+    }
+
+    .info-card {
+        width: 100%; /* Full-width cards on mobile */
+        margin-bottom: 10px;
+    }
+
+    .footer-logo img {
+        max-width: 100px; /* Even smaller logo on mobile */
+        margin-left: 0;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .footer-description .p1 {
+        margin-left: 0;
+        font-size: 12px; /* Slightly larger font on mobile */
+        width: 100%;
+        height: auto;
+    }
+
+    .group {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column; /* Stack info cards on small screens */
+        gap: 10px;
+    }
+}
+
+/* For very small screens (portrait mobile) */
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        margin-left: 5px;
+    }
+
+    .info-card {
+        width: 100%; /* Full-width info cards */
+    }
+
+    .footer-logo img {
+        max-width: 80px; /* Logo even smaller on very small screens */
+    }
+
+    .footer-description .p1 {
+        font-size: 14px; /* Larger text for readability */
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .group {
+        margin-left: 0;
+    }
+
+    .contact-info {
+        flex-direction: column; /* Stack info cards */
+        gap: 8px;
+    }
+}
+  

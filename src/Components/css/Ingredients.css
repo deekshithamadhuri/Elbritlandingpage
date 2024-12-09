@@ -1,0 +1,204 @@
+
+ .container{
+  margin-left: 260px;
+  margin-right: 80px;
+  margin-top:-110px;
+ } 
+ 
+  /* Flex container for rows */
+  .row {
+    display: flex;
+    align-items: start;
+    text-align: start;
+    gap: 16px;
+  }
+  
+.first-row{
+  width: 80% !important;
+  
+}
+.ingredients-header h3{
+  font-size:15px;
+  
+}
+h5{
+  font-size: 20px;
+}
+.ingredients-header p{
+  font-size: 15px;
+  margin-top: 10px;
+  color: dimgrey;
+}
+
+.second-row{
+  width:93%;
+  gap: 10px !important;
+}
+  
+  /* Second Row Styling */
+  .second-row .wide {
+    flex: 2; /* Wider columns for the first two items */
+  }
+  
+  .second-row .ingredient-card {
+    flex: 1; /* Default 1 column width */
+  }
+  .second-row .ingredient-card.lacto {
+    flex: 1; /* Default 1 column width */
+  }
+  
+  /* Shared Card Styles */
+  .ingredient-card {
+   position: relative;
+  
+    /* padding: 20px; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* text-align: center; */
+  }
+  .ingre-body{
+    margin-top: 10px;
+    position: absolute;
+    left:25px;
+    top:5px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .banner{
+    height: 170px !important;
+    width: 110px !important;
+  }
+  
+ 
+  a {
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: underline; 
+    font-weight: bold;
+    position: absolute;
+    bottom: 35px; 
+    left: 35px; 
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    .first-row {
+      width: 100% !important;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .second-row {
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .ingredient-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .banner {
+      width: 90% !important;
+      height: auto !important;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: -50px;
+    }
+  
+    .row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .first-row {
+      width: 100% !important;
+    }
+  
+    .ingredients-header h3 {
+      font-size: 12px;
+    }
+  
+    .ingredients-header p {
+      font-size: 12px;
+    }
+  
+    .second-row {
+      width: 100%;
+      gap: 10px !important;
+    }
+  
+    .ingredient-card {
+      flex: 1;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .ingre-body {
+      left: 10px;
+      top: 5px;
+    }
+  
+    .banner {
+      width: 50% !important;
+      height: 300px !important;
+    }
+  }
+  
+  /* For mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .container {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: -30px;
+    }
+  
+    .row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .ingredient-card {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .ingre-body {
+      font-size: 14px;
+      left: 5px;
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .banner {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
